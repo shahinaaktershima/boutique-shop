@@ -31,7 +31,17 @@ const SinginPage = () => {
       toast.error(err.message)
     })
   }
-
+  const handleGoogle=()=>{
+    googleSignIn()
+    .then(result=>{
+      console.log(result.user);
+      router.push('/')
+   })
+        .catch(error=>{
+          console.log(error);
+          
+      })
+  }
     return (
         <div className="container mx-auto text-white px-5 my-7 min-h-[calc(100vh-56px)] flex items-center justify-center lg:flex-row flex-col gap-8">
         <div className="">
@@ -79,6 +89,7 @@ const SinginPage = () => {
               Sign Up
             </Link>
           </p>
+          <button onClick={handleGoogle} className="btn my-2 bg-blue-600 text-white w-3/4 mx-auto">Log in with google</button>
         </div>
       </div>
     );
