@@ -1,10 +1,11 @@
-import AllTradeHistory from '@/components/TradingHistory/AllTradeHistory';
+"use client"
+import AddProducts from '@/components/product/AddProducts';
 import React from 'react';
 
 const page = () => {
     return (
         <div>
-            <AllTradeHistory/>
+            <AddProducts></AddProducts>
         </div>
     );
 };

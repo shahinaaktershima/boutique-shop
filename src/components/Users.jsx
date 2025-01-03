@@ -5,7 +5,9 @@ import UseAxios from './Hooks/UseAxios';
 import { FaDeleteLeft, FaUser } from 'react-icons/fa6';
 import Swal from 'sweetalert2';
 
+
 const Users = () => {
+  
     const axiosSecure=UseAxios();
     const [users,setUsers]=useState([])
     useEffect(()=>{
@@ -88,9 +90,9 @@ const Users = () => {
          <td>
         {/* {user.role==='admin'?'Admin': */}
         
-        <button onClick={()=>handleMakeAdmin(user)} className="btn btn-ghost btn-xs  bg-base-300 text-white md:text-xl flex items-center">
+        {user.role==='admin'?'Seller': <button onClick={()=>handleMakeAdmin(user)} className="btn btn-ghost btn-xs  bg-orange-400 text-white text-xl flex items-center">
        <FaUser></FaUser>
-           </button>
+           </button>}
          </td>
          <td> <button  onClick={()=>handleDeleteUser(user)} className="btn bg-base-300 text-white md:text-xl flex items-center  btn-ghost btn-xs">
        <FaDeleteLeft></FaDeleteLeft>

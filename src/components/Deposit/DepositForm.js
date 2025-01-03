@@ -18,7 +18,7 @@ const DepositForm = ({ setIsOpen }) => {
   useEffect(() => {
     if (amount > 0) {
       axios
-        .post("/create-payment-intent", { price: amount })
+        .post("/payment", { price: amount })
         .then((res) => {
           console.log(res.data.clientSecret);
           setClientSecret(res.data.clientSecret);

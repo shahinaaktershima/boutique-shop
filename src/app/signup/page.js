@@ -70,7 +70,7 @@ const SingUpPage = () => {
         <div className="container mx-auto min-h-[calc(100vh-40px)] text-white px-5 my-5 flex items-center justify-center lg:flex-row flex-col gap-8">
         <div className="">
           <h1 className="text-5xl font-semibold ">
-            Trading With <br />TRADESWIFT
+            Shopping  With <br />Boutique Shop
           </h1>
           <Image src={banner} alt="banner" width={350} height={350} />
         </div>

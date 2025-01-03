@@ -1,8 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { BiMoneyWithdraw } from "react-icons/bi";
-import { FaHome } from "react-icons/fa";
-import { FaMoneyBillTransfer, FaPaypal } from "react-icons/fa6";
+import { FaPaypal } from "react-icons/fa6";
 
 const layout = ({ children }) => {
   return (
@@ -14,11 +12,7 @@ const layout = ({ children }) => {
               <FaPaypal></FaPaypal> Deposit
             </Link>
           </li>
-          <li>
-            <Link href={"/userdashboard/withdraw"}>
-              <BiMoneyWithdraw></BiMoneyWithdraw> Withdraw
-            </Link>
-          </li>
+        
          
         </ul>
       </div>

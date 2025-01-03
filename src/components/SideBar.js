@@ -36,6 +36,31 @@ const SideBar = ({userInfo}) => {
        {userInfo.role === "admin" ? (
             <div className="flex flex-col justify-between min-h-[calc(100vh-34px)]">
              <div className="space-y-1">
+             
+              <li>
+                <Link href={"/"}>
+                  <FaHome></FaHome> Home
+                </Link>
+              </li>
+              
+              <li>
+                <Link href={"/userdashboard/AddProducts"}>
+                  {" "}
+                  <FaPlaystation></FaPlaystation> AddProducts
+                </Link>
+              </li>
+              <li>
+                <Link href={"/userdashboard/ManageProducts"}>
+                  {" "}
+                  <FaPlaystation></FaPlaystation> ManageProducts
+                </Link>
+              </li>
+              <li>
+                <Link href={"/userdashboard/profile"}>
+                  {" "}
+                  <FaPlaystation></FaPlaystation> Profile
+                </Link>
+              </li>
              <li>
                 <Link href={"/userdashboard/analytics"}>
                   <FaChartLine ></FaChartLine > Analytics
@@ -46,12 +71,7 @@ const SideBar = ({userInfo}) => {
                   <FaUsers></FaUsers> Allusers
                 </Link>
               </li>
-              <li>
-                <Link href={"/userdashboard/alltrade"}>
-                  {" "}
-                  <FaMoneyBill1Wave  /> All Trade
-                </Link>
-              </li>
+             
               <li>
                 <Link href={"/userdashboard/alltransaction"}>
                   {" "}
@@ -59,13 +79,7 @@ const SideBar = ({userInfo}) => {
                 </Link>
               </li>
              </div>
-              <div>
-              <li>
-                <Link href={"/"}>
-                  <FaHome></FaHome> Home
-                </Link>
-              </li>
-              </div>
+              
             </div>
           ) : (
             <div className="space-y-1">
@@ -80,35 +94,19 @@ const SideBar = ({userInfo}) => {
                 </Link>
               </li>
               <li>
+                <Link href={"/userdashboard/profile"}>
+                  {" "}
+                  <FaPlaystation></FaPlaystation> Profile
+                </Link>
+              </li>
+             
+             
+              <li>
                 <Link href={"/userdashboard/account"}>
                   {" "}
                   <FaAccusoft></FaAccusoft>Update Account{" "}
                 </Link>
-              </li>
-              <li>
-                <Link href={"/userdashboard/deposite"}>
-                  {" "}
-                  <FaVoicemail></FaVoicemail> Transection with anyOperator
-                </Link>
-              </li>
-              <li>
-                <Link href={"/userdashboard/SocialTrading"}>
-                  {" "}
-                  <FcNeutralTrading /> Social Trading
-                </Link>
-              </li>
-              <li>
-                <Link href={"/userdashboard/tradinghistory"}>
-                  {" "}
-                  <FaMoneyBill1Wave  /> Trading History
-                </Link>
-              </li>
-              <li>
-                <Link href={"/userdashboard/tournaments"}>
-                  {" "}
-                  <FaPlaystation></FaPlaystation> Tournaments
-                </Link>
-              </li>
+              </li>       
               <li>
                 <Link href={"/userdashboard/paymenthistory"}>
                   {" "}
@@ -116,12 +114,7 @@ const SideBar = ({userInfo}) => {
                 </Link>
               </li>
 
-              <li>
-                <Link href={"/userdashboard/profile"}>
-                  {" "}
-                  <FaPlaystation></FaPlaystation> Profile
-                </Link>
-              </li>
+             
             </div>
           )}
        </div>
