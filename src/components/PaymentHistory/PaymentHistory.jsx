@@ -1,21 +1,22 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import UseAuth from "../Hooks/UseAuth";
 import UseAxios from "../Hooks/UseAxios";
 import { FaTrash } from "react-icons/fa";
+import UseAdmin from "../Hooks/UseAdmin";
 
 const PaymentHistory = () => {
   const [history, setHistort] = useState([]);
-  const { user } = UseAuth();
+ 
+  const [userInfo] = UseAdmin();
   const axios = UseAxios();
   
 
   useEffect(() => {
     axios
-      .get(`/paymenthistory?email=${user?.email}`)
+      .get(`/paymenthistory?email=${userInfo?.email}`)
       .then((res) => setHistort(res.data));
-  }, [user,axios]);
+  }, [userInfo,axios]);
 
   console.log(history);
 
