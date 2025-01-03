@@ -23,6 +23,13 @@ const Deposit = () => {
           console.log(res.data.url);
           window.location.replace(res.data.url);
         })})
+         Swal.fire({
+                         position: "top-end",
+                         icon: "success",
+                         title: ' payment successfull now!',
+                         showConfirmButton: false,
+                         timer: 1500
+                       }); 
     }
     else{
       Swal.fire({
