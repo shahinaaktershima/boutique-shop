@@ -38,7 +38,7 @@ const Alltransaction = () => {
 
   return (
     <div>
-      <h2 className="text-3xl font-bold text-center">ALL transections </h2>
+      <h2 className="text-3xl font-bold text-center">ALL transection by cards</h2>
         <form>
             <input onChange={(e)=>setQuery(e.target.value)} type="text" placeholder="Search with email" className="mb-4 px-5 py-2 placeholder:text-white bg-gray-700 text-white" />
         </form>
