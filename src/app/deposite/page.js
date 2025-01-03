@@ -12,7 +12,7 @@ const Transection = () => {
       } = useForm()
       const onSubmit = (data) => {
         console.log(data)
-      fetch('http://localhost:5000/deposit',{
+      fetch('https://boutique-server.vercel.app/deposit',{
         
         method:"POST",
         headers:{

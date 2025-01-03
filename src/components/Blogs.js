@@ -9,7 +9,7 @@ const Blogs = () => {
 // data fetching
   const [getBlogData, setGetBlogData] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/blogs")
+    fetch("https://boutique-server.vercel.app/blogs")
       .then((res) => res.json())
       .then((data) => {
       setGetBlogData(data);

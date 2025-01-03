@@ -17,7 +17,7 @@ const AddProducts = () => {
         form.reset('')
         const Product={name,title,category,price,description,date,amount,image}
        console.log(Product);
-        fetch('http://localhost:5000/product',{
+        fetch('https://boutique-server.vercel.app/product',{
             method:'POST',
             headers:{
                 'content-type':'application/json'

@@ -11,7 +11,7 @@ const Users = () => {
     const axiosSecure=UseAxios();
     const [users,setUsers]=useState([])
     useEffect(()=>{
-      fetch('http://localhost:5000/user')
+      fetch('https://boutique-server.vercel.app/user')
       .then(res=>res.json())
       .then(data=>setUsers(data))
     },[])
