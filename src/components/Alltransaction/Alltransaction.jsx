@@ -10,7 +10,7 @@ const Alltransaction = () => {
   const [query, setQuery] = useState('');
   const axios = UseAxios();
   useEffect(() => {
-    axios.get(`/paymentsystem?currentPage=${currentPage}&query=${query}`).then((res) => setTransaction(res.data));
+    axios.get(`/paymenthistory?currentPage=${currentPage}&query=${query}`).then((res) => setTransaction(res.data));
   }, [currentPage,query,axios]);
 
   useEffect(() => {
