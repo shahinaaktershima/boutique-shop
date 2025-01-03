@@ -42,6 +42,80 @@ const SideBar = ({userInfo}) => {
                   <FaHome></FaHome> Home
                 </Link>
               </li>
+              <li>
+                <Link href={"/userdashboard"}>
+                  <MdDashboard></MdDashboard> Dashboard
+                </Link>
+              </li>
+              <li>
+                <Link href={"/userdashboard/AddProducts"}>
+                  {" "}
+                  <FaPlaystation></FaPlaystation> AddProducts
+                </Link>
+              </li>
+             
+              <li>
+                <Link href={"/userdashboard/profile"}>
+                  {" "}
+                  <FaPlaystation></FaPlaystation> Profile
+                </Link>
+              </li>
+              <li>
+                <Link href={"/userdashboard/account"}>
+                  {" "}
+                  <FaAccusoft></FaAccusoft>Update Account{" "}
+                </Link>
+              </li>  
+             </div>
+              
+            </div>
+          ) : (
+            <div className="space-y-1">
+              <li>
+                <Link href={"/"}>
+                  <FaHome></FaHome> Home
+                </Link>
+              </li>
+              <li>
+                <Link href={"/userdashboard"}>
+                  <MdDashboard></MdDashboard> Dashboard
+                </Link>
+              </li>
+              <li>
+                <Link href={"/userdashboard/profile"}>
+                  {" "}
+                  <FaPlaystation></FaPlaystation> Profile
+                </Link>
+              </li>
+             
+             
+              <li>
+                <Link href={"/userdashboard/account"}>
+                  {" "}
+                  <FaAccusoft></FaAccusoft>Update Account{" "}
+                </Link>
+              </li>       
+              {/* <li>
+                <Link href={"/userdashboard/paymenthistory"}>
+                  {" "}
+                  <FaPlaystation></FaPlaystation> Historty
+                </Link>
+              </li> */}
+
+             
+            </div>
+           
+          )}
+       </div>
+       <div>
+        {userInfo.role === "Superadmin"?  <div className="flex flex-col justify-between min-h-[calc(100vh-34px)]">
+             <div className="space-y-1">
+             
+              <li>
+                <Link href={"/"}>
+                  <FaHome></FaHome> Home
+                </Link>
+              </li>
               
               <li>
                 <Link href={"/userdashboard/AddProducts"}>
@@ -80,43 +154,7 @@ const SideBar = ({userInfo}) => {
               </li>
              </div>
               
-            </div>
-          ) : (
-            <div className="space-y-1">
-              <li>
-                <Link href={"/"}>
-                  <FaHome></FaHome> Home
-                </Link>
-              </li>
-              <li>
-                <Link href={"/userdashboard"}>
-                  <MdDashboard></MdDashboard> Dashboard
-                </Link>
-              </li>
-              <li>
-                <Link href={"/userdashboard/profile"}>
-                  {" "}
-                  <FaPlaystation></FaPlaystation> Profile
-                </Link>
-              </li>
-             
-             
-              <li>
-                <Link href={"/userdashboard/account"}>
-                  {" "}
-                  <FaAccusoft></FaAccusoft>Update Account{" "}
-                </Link>
-              </li>       
-              <li>
-                <Link href={"/userdashboard/paymenthistory"}>
-                  {" "}
-                  <FaPlaystation></FaPlaystation> Historty
-                </Link>
-              </li>
-
-             
-            </div>
-          )}
+            </div>:'' }
        </div>
         </ul>
       </div>
