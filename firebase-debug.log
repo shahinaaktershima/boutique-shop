@@ -1,0 +1,114 @@
+[debug] [2024-02-01T14:30:06.909Z] ----------------------------------------------------------------------
+[debug] [2024-02-01T14:30:06.915Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\shima\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-02-01T14:30:06.916Z] CLI Version:   13.1.0
+[debug] [2024-02-01T14:30:06.917Z] Platform:      win32
+[debug] [2024-02-01T14:30:06.917Z] Node Version:  v20.9.0
+[debug] [2024-02-01T14:30:06.917Z] Time:          Thu Feb 01 2024 20:30:06 GMT+0600 (Bangladesh Standard Time)
+[debug] [2024-02-01T14:30:06.917Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-02-01T14:30:07.058Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-01T14:30:07.059Z] > authorizing via signed-in user (shima421914@gmail.com)
+[debug] [2024-02-01T14:30:07.060Z] [iam] checking project tradeswift-63426 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-02-01T14:30:07.067Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/tradeswift-63426:testIamPermissions [none]
+[debug] [2024-02-01T14:30:07.068Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/tradeswift-63426:testIamPermissions x-goog-quota-user=projects/tradeswift-63426
+[debug] [2024-02-01T14:30:07.069Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tradeswift-63426:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-02-01T14:30:08.625Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/tradeswift-63426:testIamPermissions 200
+[debug] [2024-02-01T14:30:08.626Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tradeswift-63426:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-02-01T14:30:08.628Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tradeswift-63426 [none]
+[debug] [2024-02-01T14:30:09.185Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tradeswift-63426 200
+[debug] [2024-02-01T14:30:09.186Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tradeswift-63426 {"projectId":"tradeswift-63426","projectNumber":"762092318674","displayName":"tradeswift","name":"projects/tradeswift-63426","resources":{"hostingSite":"tradeswift-63426"},"state":"ACTIVE","etag":"1_7bfb8506-6209-4b19-8763-ac77a959e077"}
+[debug] [2024-02-01T14:30:17.234Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/tradeswift-63426/sites pageToken=&pageSize=10
+[debug] [2024-02-01T14:30:18.457Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/tradeswift-63426/sites 200
+[debug] [2024-02-01T14:30:18.458Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/tradeswift-63426/sites {"sites":[{"name":"projects/tradeswift-63426/sites/tradeswift-63426","defaultUrl":"https://tradeswift-63426.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-02-01T14:30:18.460Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/tradeswift-63426/sites 
+[debug] [2024-02-01T14:30:19.086Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/tradeswift-63426/sites 200
+[debug] [2024-02-01T14:30:19.086Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/tradeswift-63426/sites {"sites":[{"name":"projects/tradeswift-63426/sites/tradeswift-63426","defaultUrl":"https://tradeswift-63426.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-02-01T14:30:19.086Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tradeswift-63426/webApps/-/config [none]
+[debug] [2024-02-01T14:30:20.357Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tradeswift-63426/webApps/-/config 200
+[debug] [2024-02-01T14:30:20.358Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tradeswift-63426/webApps/-/config {"projectId":"tradeswift-63426","appId":"1:762092318674:web:909e352623fafc3f15a20b","storageBucket":"tradeswift-63426.appspot.com","apiKey":"AIzaSyB0jYzDE2ow-T9n9WDtTL0sUSAOoNXc8-Y","authDomain":"tradeswift-63426.firebaseapp.com","messagingSenderId":"762092318674"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-02-01T14:30:37.067Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/tradeswift-63426/sites/tradeswift-63426 [none]
+[debug] [2024-02-01T14:30:38.054Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/tradeswift-63426/sites/tradeswift-63426 200
+[debug] [2024-02-01T14:30:38.055Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/tradeswift-63426/sites/tradeswift-63426 {"name":"projects/tradeswift-63426/sites/tradeswift-63426","defaultUrl":"https://tradeswift-63426.web.app","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 14.0.4
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info] 
+
+[info] 🌼   daisyUI 4.6.1
+
+[info] ├─ ✔︎ 2 themes added		https://daisyui.com/docs/themes
+
+[info] ╰─ ★ Star daisyUI on GitHub	https://github.com/saadeghi/daisyui
+
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/10) ...
+
+[info]    Generating static pages (2/10) 
+
+[info] []
+
+[info]    Generating static pages (4/10) 
+
+[info] []
+
+[info]    Generating static pages (7/10) 
+
+[info] []
+
+[info]  ✓ Generating static pages (10/10) 
+
+[info]    Finalizing page optimization ...
+
+[info]    Collecting build traces ...
+
+[info] 
+
+[info] Route (app)                              Size     First Load JS
+┌ ○ /                                    18 kB           112 kB
+├ ○ /_not-found                          875 B          83.2 kB
+├ ○ /blog                                187 B          94.2 kB
+├ ○ /contact                             9.61 kB        98.7 kB
+├ ○ /deposite                            8.6 kB         90.9 kB
+├ ○ /signin                              3.39 kB         138 kB
+└ ○ /signup                              3.43 kB         138 kB
++ First Load JS shared by all            82.3 kB
+  ├ chunks/938-033406ee6fe478b3.js       26.7 kB
+  ├ chunks/fd9d1056-a01769929b23b1ea.js  53.3 kB
+  ├ chunks/main-app-a14d5bfbad7c88ea.js  220 B
+  └ chunks/webpack-faa70fb0caa4cc13.js   2.13 kB
+
+
+[info] 
+○  (Static)  prerendered as static content
+
+
+[debug] [2024-02-01T14:34:40.495Z] SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at findDependency (C:\Users\shima\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\utils.js:188:23)
+    at getNextVersion (C:\Users\shima\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\next\utils.js:189:51)
+    at getConfig (C:\Users\shima\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\next\index.js:404:52)
+    at build (C:\Users\shima\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\next\index.js:77:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async prepareFrameworks (C:\Users\shima\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:220:33)
+    at async deploy (C:\Users\shima\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:55:13)
+[error] 
+[error] Error: An unexpected error has occurred.
