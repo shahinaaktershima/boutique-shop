@@ -83,12 +83,7 @@ const SideBar = ({userInfo}) => {
                 </Link>
               </li>
               
-              <li>
-                <Link href={"/userdashboard/AddProducts"}>
-                  {" "}
-                  <FaPlaystation></FaPlaystation> AddProducts
-                </Link>
-              </li>
+             
               <li>
                 <Link href={"/userdashboard/ManageProducts"}>
                   {" "}
