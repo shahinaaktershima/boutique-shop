@@ -45,7 +45,7 @@ const Transection = () => {
       <label className="font-bold " htmlFor="amount">
               Amount
             </label>
-      <input type="number" className="input input-bordered" defaultValue="0" {...register("number")} required/>
+      <input type="number" className="input input-bordered" defaultValue="" {...register("amount")} required/>
 
       {/* include validation with required or other standard HTML validation rules */}
      

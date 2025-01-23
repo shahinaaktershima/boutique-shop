@@ -23,13 +23,7 @@ const Deposit = () => {
           console.log(res.data.url);
           window.location.replace(res.data.url);
         })})
-         Swal.fire({
-                         position: "top-end",
-                         icon: "success",
-                         title: ' payment successfull now!',
-                         showConfirmButton: false,
-                         timer: 1500
-                       }); 
+        
     }
     else{
       Swal.fire({
@@ -76,7 +70,7 @@ const Deposit = () => {
         <input
           type="text"
           className="input input-bordered"
-          defaultValue="deposit"
+          defaultValue="payment"
           {...register("type")}
         />
         <label className="font-bold " htmlFor="amount">
@@ -85,7 +79,7 @@ const Deposit = () => {
         <input
           type="number"
           className="input input-bordered"
-          defaultValue="0"
+         defaultValue={userInfo?.amount}
           {...register("amount")}
           required
         />
