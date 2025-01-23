@@ -38,7 +38,7 @@ const Deposit = () => {
   };
 
   return (
-    <div className="max-w-[600px] lg:min-h-screen px-9 my-10 border-x-2 border-dotted  border-[#353A4D]">
+    <div className="max-w-[600px] lg:min-h-screen justify-center align-middle px-9 my-10 border-x-2 border-dotted  border-[#353A4D]">
       <h2 className="text-2xl my-3 font-bold text-center">Please fill up the form to deposit
       </h2>
       <form
