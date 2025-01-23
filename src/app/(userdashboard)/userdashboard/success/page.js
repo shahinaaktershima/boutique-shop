@@ -1,12 +1,11 @@
-import React from 'react';
+import Image from "next/image";
+
 
 const page = () => {
     return (
-        <div className='bg-blue-500 max-h-full text-center justify-center mx-auto'>
-        <div className='bg-blue-500 max-h-screen text-center justify-center mx-auto'>
-            payment successfull
-        </div>
-        </div>
+        <div className="flex justify-center items-center min-h-screen px-4">
+                    <Image className="animate-spin w-44 h-44" src="https://i.postimg.cc/CMvfz1RW/image.png" alt="payment image" width={500} height={500}/>
+                </div>
     );
 };
 

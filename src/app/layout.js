@@ -17,7 +17,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" data-theme={"dark"}>
+    <html lang="en" data-theme={"retro"}>
       <body className={`${roboto.className}`}>
       <Toaster></Toaster>
         <AuthProvider>{children}</AuthProvider>
